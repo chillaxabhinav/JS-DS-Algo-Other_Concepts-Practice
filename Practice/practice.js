@@ -128,15 +128,146 @@
 // const myobj =  new myclass('Ahinav','Singh');
 
 
-class check{
-    constructor(){
-        console.log(this);
-    }
-    first = 'Abhinav';
-    second = 'Singh';
-    static myfunc(){
-        console.log('Myfunc of class');
-    }
-}
+// class check{
+//     constructor(){
+//         console.log(this);
+//     }
+//     first = 'Abhinav';
+//     second = 'Singh';
+//     static myfunc(){
+//         console.log('Myfunc of class');
+//     }
+// }
 
-const myobj = new check();
+// const myobj = new check();
+
+// const me = 'Abhinav';
+// for (let p of me){
+//     console.log(p);
+// }
+
+// for(let i =0 ; i<me.length; i++){
+//     console.log(me[i]);
+// }
+
+// const myarray = new Array();
+// myarray.push(1);
+// myarray.push(2);
+// myarray.me = 'Abhinav';
+// console.log(myarray);
+
+// for(let p in myarray){
+//     console.log(p);
+// }
+
+// class myclass {
+//         first =[1, 2, 3];
+//         second = 'Abhinav';
+//         third = ()=>{
+//             console.log('mr');
+//         }
+// }
+
+// const myobj = new myclass();
+
+// const me = myobj.third;
+// me();
+
+// const me = {
+//     first : 'Abhinav',
+//     second : 'singh',
+//     class : 'B.Tech'
+// }
+// console.log(me[first]);
+
+// for (let p of myobj){
+//     console.log(p);
+// }
+
+
+
+// const arr = new Array();
+// arr.push(1);
+
+// class myclass{
+//     constructor(){
+//         console.log(this);    }
+//     me = 'Abhinav';
+//     my(){
+
+//     };
+//     second = ()=>{
+
+//     }
+// }
+// myclass.prototype.myprop = 'Singh';
+
+// class sec extends myclass{
+//     constructor(){
+//         super();
+//         console.log(this);
+//     }
+//     see(){
+
+//     }
+// }
+
+// class thir extends sec{
+//     constructor(){
+//         super();
+//         console.log(this);
+//     }
+// }
+
+// thir.prototype.some = 'some';
+
+// const myobj = new thir();
+// console.log(myobj);
+
+
+// Object call recursivey below to traverse in a nested object 
+
+
+// const myobj = {
+//     name : 'Abhinav',
+//     last : 'singh',
+//     address : {
+//         street : 'Line par',
+//         area : 'Station area'
+//     },
+//     mylast : 'mylast' 
+// }
+
+
+
+// function ite(obj,keys){
+//     for (let key of keys){
+//         if(typeof(obj[key])==='object'){
+//             ite(obj[key],Object.keys(obj[key]))
+//         }
+//         else{
+//             console.log(obj[key]);
+//         }
+//     }
+// }
+
+// ite(myobj,Object.keys(myobj));
+
+
+// ==== Function call and closures === //
+
+// function me(){
+//     const myanswer = 'I am my answer';
+//     return () => {
+        
+//         return myanswer;
+//     }
+// }
+
+// function second(){
+//     const myanswer = me()();
+//     console.log(myanswer);
+// }
+
+// second();
+
