@@ -271,3 +271,177 @@
 
 // second();
 
+
+// class mysecond {
+//     myproperty = 'Singh';
+// }
+
+
+// class myclass{
+//     myprop = console.log(this);
+//     mysecond = this.myprop;
+//     mybox = {
+//         myprop : console.log(this),
+//         myfunc : () => console.log(this),
+//         myreg : function(){console.log(this)}
+//     }
+//     myfunc(){
+//         console.log(this);
+//         return () => {
+//             console.log(this);
+//         }
+        
+//     }
+//     myfunc2 = () => {
+//         console.log(this);
+//         return () => {
+//             console.log(this);
+//         }
+//     }
+// }
+
+// const myobj = new myclass();
+// const mysec =  new mysecond();
+// myobj.myfunc2.call(mysec)();
+// const sec =  new mysecond();
+// const myobj = new myclass();
+// myobj.mybox.myprop;
+// myobj.mybox.myreg();
+// const myf = myobj.myfunc.call(sec)();
+
+
+// const box ={
+//     color : console.log(this)
+// }
+
+// box.color;
+
+
+// const box = {
+//     color : 'green',
+//     myprop : function(){console.log(this.color)},
+//     boxfunc : () =>{console.log(this.color)}
+// }
+// box.myprop();
+// box.boxfunc.call(box);
+
+// const me = {
+//     first : 'fir',
+//     second : 'sec'
+// }
+// const check = 'fir';
+// if(check in me){
+//     console.log('I am checked');
+// }
+
+
+// const me = '1';
+// const mynumber = '12345.3445';
+
+// console.log(Number(me));
+// console.log(parseFloat(mynumber).;
+// console.log(mynumber.toString());
+
+// const myarr = [1,2,3,5];
+// const num =4;
+// const show = myarr.sort();
+// console.log(show);
+
+
+// console.log('This is my console');
+
+// let myobj = {
+//     firstname : 'Abhinav',
+//     lastname : 'Singh',
+//     roll : 2016007
+// }
+
+// console.log(myobj.hasOwnProperty('firstname'));
+
+// let mynew = {};
+
+// const myarr = [1,2,3];
+
+// for(let i in myarr){
+//     mynew[myarr[i]]=String(myarr[i]);
+// }
+// console.log(mynew);
+
+// const myarray = [1,2,3,-4,-3,-2];
+// const myNew = myarray.sort();
+// console.log(myNew);
+
+// for(let i in myNew){
+//     for(let j of myNew){
+//         if(myNew[i] + j == 0){
+//             const arr = new Array();
+//             arr.push(myNew[i]);
+//             arr.push(j);
+//             console.log(arr);
+//             break;
+//         }
+//     }
+//     break;
+// }
+
+
+// let myarray = [1,1,1,2,3,3,4,5,6,6,7,7,7,9];
+// let i = 0;
+// let j = 1;
+// while(j<myarray.length){
+//     if(myarray[i] == myarray[j]){
+//         j++;
+//     }
+//     else {
+//         i++;
+//         myarray[i] = myarray[j];
+//         j++;
+//     }
+// }
+// console.log(i+1);
+
+// let myarr = [1,2,3,4,5,6,7,8,9,10];
+
+// console.log(myarr.slice(0,5));
+
+// let myarr = [-1,-4,-3,-2,1,2,3,8,5];
+// console.log(myarr.sort());
+
+// let myarr = ['Abhi','Singh','Ubisoft','EA','Sprinklr'];
+
+// let sec = [1,10,9,5];
+
+// console.log(myarr.sort((a,b)=>b.length - a.length));
+
+// let myarr = new Array();
+// myarr[0] = [];
+// console.log(myarr);
+// myarr.push(34);
+// myarr[0].push(56);
+// console.log(myarr[0]);
+
+// const myarray = [10,20,30,40];
+// let my = myarray.pop();
+// console.log(my[4]);
+
+
+let scores = {
+    X : [{node : "A",weight : 10},{node : "B",weight : 20}],
+    Y: -1,
+    tie:0
+}
+
+
+myarr = [0,1,2,3,4];
+for(let i in myarr){
+    console.log(i+1);
+}
+
+for(let i=0;i<myarr.length;i++){
+    console.log(i+1);
+}
+
+
+
+
+
