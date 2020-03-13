@@ -35,7 +35,7 @@ process.stdin.on('end', function () {
             // For query
 
             if (memory.hasOwnProperty(query)) {
-                queryAns = memory[query]
+                queryAns = memory[query];
             }
             else {
                 let BinaryQuery = query.toString(2);
