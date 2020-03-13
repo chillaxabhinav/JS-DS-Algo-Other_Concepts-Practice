@@ -432,14 +432,30 @@ let scores = {
 }
 
 
-myarr = [0,1,2,3,4];
-for(let i in myarr){
-    console.log(i+1);
-}
+// let myarr = [34,01,90,99];
+// myarr.forEach((ele,index,myarr) => {
+//     console.log(`element -> ${ele}`);
+//     console.log(`index -> ${index}`);
+//     console.log(`Array -> ${myarr[0]}`)
+// })
 
-for(let i=0;i<myarr.length;i++){
-    console.log(i+1);
-}
+// let myNew = myarr.map((ele,index)=>{
+//     return index;
+// })
+// console.log(myNew);
+
+// let myFilter = [51,34,67,100,110,11,98,7,23];
+// let so = myFilter.filter((ele)=> {
+//         return ele>40;  
+// });
+
+
+let x = 3;
+let y = 4
+let myans = 3^4;
+console.log(myans.toString(2));
+
+
 
 
 
