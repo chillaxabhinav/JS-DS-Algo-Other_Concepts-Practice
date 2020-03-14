@@ -385,72 +385,143 @@
 // }
 
 
-// let myarray = [1,1,1,2,3,3,4,5,6,6,7,7,7,9];
-// let i = 0;
-// let j = 1;
-// while(j<myarray.length){
-//     if(myarray[i] == myarray[j]){
-//         j++;
+// // let myarray = [1,1,1,2,3,3,4,5,6,6,7,7,7,9];
+// // let i = 0;
+// // let j = 1;
+// // while(j<myarray.length){
+// //     if(myarray[i] == myarray[j]){
+// //         j++;
+// //     }
+// //     else {
+// //         i++;
+// //         myarray[i] = myarray[j];
+// //         j++;
+// //     }
+// // }
+// // console.log(i+1);
+
+// // let myarr = [1,2,3,4,5,6,7,8,9,10];
+
+// // console.log(myarr.slice(0,5));
+
+// // let myarr = [-1,-4,-3,-2,1,2,3,8,5];
+// // console.log(myarr.sort());
+
+// // let myarr = ['Abhi','Singh','Ubisoft','EA','Sprinklr'];
+
+// // let sec = [1,10,9,5];
+
+// // console.log(myarr.sort((a,b)=>b.length - a.length));
+
+// // let myarr = new Array();
+// // myarr[0] = [];
+// // console.log(myarr);
+// // myarr.push(34);
+// // myarr[0].push(56);
+// // console.log(myarr[0]);
+
+// // const myarray = [10,20,30,40];
+// // let my = myarray.pop();
+// // console.log(my[4]);
+
+
+// let scores = {
+//     X : [{node : "A",weight : 10},{node : "B",weight : 20}],
+//     Y: -1,
+//     tie:0
+// }
+
+
+// // let myarr = [34,01,90,99];
+// // myarr.forEach((ele,index,myarr) => {
+// //     console.log(`element -> ${ele}`);
+// //     console.log(`index -> ${index}`);
+// //     console.log(`Array -> ${myarr[0]}`)
+// // })
+
+// // let myNew = myarr.map((ele,index)=>{
+// //     return index;
+// // })
+// // console.log(myNew);
+
+// // let myFilter = [51,34,67,100,110,11,98,7,23];
+// // let so = myFilter.filter((ele)=> {
+// //         return ele>40;  
+// // });
+
+
+// let my = [
+//     {
+//         node : 10,
+//         visited : true
+//     },
+//     {
+//         node : 20,
+//         visited : false
+//     },
+//     {
+//         node : 30,
+//         visited : true
+//     },
+//     {
+//         node : 40,
+//         visited : false
+//     },
+//     {
+//         node : 50,
+//         visited : true
+//     },
+//     {
+//         node : 60,
+//         visited : false
+//     },
+//     {
+//         node : 70,
+//         visited : true
+//     },
+//     {
+//         node : 80,
+//         visited : false
+//     },
+//     {
+//         node : 90,
+//         visited : false
+//     },
+//     {
+//         node : 100,
+//         visited : true
 //     }
-//     else {
-//         i++;
-//         myarray[i] = myarray[j];
-//         j++;
+// ];
+
+// let shut = my.sort((a,b)=>a.visited - b.visited);
+// console.log(shut);
+
+
+
+//let myarr = [3,1,4,1,5,9];
+// let fre = {};
+
+// myarr.forEach(ele => {
+//     if(fre.hasOwnProperty(ele)){
+//         fre[ele] = fre[ele]  + 1;
+//     }
+//     else{
+//         fre[ele] = 1;
+//     }
+// })
+// myarr.sort((a,b)=>a-b);
+// console.log(myarr);
+// let count = 0;
+
+// for(let i=0;i<myarr.length;i++){
+//     if(myarr[i] != myarr[i+1]){
+//         count++;
 //     }
 // }
-// console.log(i+1);
-
-// let myarr = [1,2,3,4,5,6,7,8,9,10];
-
-// console.log(myarr.slice(0,5));
-
-// let myarr = [-1,-4,-3,-2,1,2,3,8,5];
-// console.log(myarr.sort());
-
-// let myarr = ['Abhi','Singh','Ubisoft','EA','Sprinklr'];
-
-// let sec = [1,10,9,5];
-
-// console.log(myarr.sort((a,b)=>b.length - a.length));
-
-// let myarr = new Array();
-// myarr[0] = [];
-// console.log(myarr);
-// myarr.push(34);
-// myarr[0].push(56);
-// console.log(myarr[0]);
-
-// const myarray = [10,20,30,40];
-// let my = myarray.pop();
-// console.log(my[4]);
+// console.log(count);
 
 
-let scores = {
-    X : [{node : "A",weight : 10},{node : "B",weight : 20}],
-    Y: -1,
-    tie:0
-}
-
-
-// let myarr = [34,01,90,99];
-// myarr.forEach((ele,index,myarr) => {
-//     console.log(`element -> ${ele}`);
-//     console.log(`index -> ${index}`);
-//     console.log(`Array -> ${myarr[0]}`)
-// })
-
-// let myNew = myarr.map((ele,index)=>{
-//     return index;
-// })
-// console.log(myNew);
-
-// let myFilter = [51,34,67,100,110,11,98,7,23];
-// let so = myFilter.filter((ele)=> {
-//         return ele>40;  
-// });
-
-
-
+//for()
 
 
 
