@@ -450,10 +450,7 @@ let scores = {
 // });
 
 
-let x = 3;
-let y = 4
-let myans = 3^4;
-console.log(myans.toString(2));
+
 
 
 
