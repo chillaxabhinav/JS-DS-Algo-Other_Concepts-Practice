@@ -33,17 +33,19 @@ let possible = {
     "8 8" : false,
 }
 
-let answer = [];
-let total = 0;
 
 
-class moveStorage{
+
+class MoveStorage{
+    total = 0;
     constructor(coor1,coor2){
         this.possible = [];
         this.coor1 = coor1;
         this.coor2 =coor2;
+        this.total = 0;
+        this.answer = [];
     }
-    static possibleMoves(coor1,coor2,obj){
+    possibleMoves(coor1,coor2,obj){
         let helper1 = coor1;
         let helper2 = coor2;
         if(helper1>=1 && helper2>=1){
@@ -88,13 +90,20 @@ class moveStorage{
                 helper2--;
             }
         }
-        obj.possible.sort((a,b)=>a.distance - b.distance);
-        //console.log(obj.possible);
+        this.possible.sort((a,b)=>a.visited - !b.visited);
     }
-    static makeMoves(coor1,coor2,myNew){
-        myNew = new moveStorage(coor1, coor2);
-        moveStorage.possibleMoves(coor1,coor2,myNew);
+    makeMoves(coor1,coor2,myNew){
+        let fix = myNew;
+        myNew = new MoveStorage(coor1, coor2);
+        myNew.possibleMoves(coor1,coor2,myNew);
         let toIndex = myNew.possible.findIndex(ele => ele.visited==false);
+        let coorVisitX = myNew.coor1;
+        let coorVisitY = myNew.coor2;
+        if (possible.hasOwnProperty(`${coorVisitX} ${coorVisitY}`)) {
+            possible[`${coorVisitX} ${coorVisitY}`] = true;
+        }
+        fix.total++;
+        fix.answer.push([coorVisitX, coorVisitY]);
         if(toIndex<0){
             return;
         }
@@ -103,45 +112,25 @@ class moveStorage{
             let y = myNew.possible[toIndex].node[1];
             let coorVisitX = myNew.coor1;
             let coorVisitY = myNew.coor2;
-            //console.log('Current ',coorVisitX,coorVisitY,' to visit ',x,y);
-            for (let i = 0; i < myNew.possible[toIndex].distance; i++) {
-                if (possible.hasOwnProperty(`${coorVisitX} ${coorVisitY}`)) {
-                    possible[`${coorVisitX} ${coorVisitY}`] = true;
-                }
-                answer.push([coorVisitX, coorVisitY]);
-                if (x < coorVisitX && y < coorVisitY) {
-                    coorVisitX--;
-                    coorVisitY--;
-                    total++;
-                }
-                else if (x > coorVisitX && y > coorVisitY) {
-                    coorVisitX++;
-                    coorVisitY++;
-                    total++;
-                }
-                else if (x < coorVisitX && y > coorVisitY) {
-                    coorVisitX--;
-                    coorVisitY++;
-                    total++;
-                }
-                else if (x > coorVisitX && y < coorVisitY) {
-                    coorVisitX++;
-                    coorVisitY--;
-                    total++;
-                }
+            if (possible.hasOwnProperty(`${coorVisitX} ${coorVisitY}`)) {
+                possible[`${coorVisitX} ${coorVisitY}`] = true;
             }
-            moveStorage.makeMoves(x, y, myNew);
+            this.makeMoves(x, y, this);
         }
     }
 }
 
 function move(point){
-    let coor = (point.split(' ')).map(ele => parseInt(ele));
-    moveStorage.makeMoves(coor[0],coor[1]);
+    let coor = point.split(' ').map(ele => parseInt(ele));
+    let my = new MoveStorage(coor[0], coor[1]);
+    my.makeMoves(coor[0], coor[1],my);
+    my.answer.shift();
+    console.log(my.answer.length);
+    for(let i of my.answer){
+        console.log(...i);
+    }
 }
-console.log(possible);
-console.log(answer);
-
-
-move("5 3");
+// let me = ['5','3'];
+// console.log(String(me[0] +' ' +  String(me[1])));
+move("1 1");
 
