@@ -523,9 +523,319 @@
 
 //for()
 
+// window.addEventListener('resize', ()=>{
+//     console.log('resized');
+//     console.log(window.innerWidth);
+// })
+
+
+// window.addEventListener('resize', () => {
+//     let width = window.innerWidth;
+//     console.log(width);
+//     if (width <= 1382) {
+//         document.querySelector('.main-sidebar-div').style.display = 'none';
+//         document.querySelector('.main-content-div').classList.remove('col-lg-11');
+//         document.querySelector('.main-content-div').classList.add('col-lg-12');
+//         if (width <= 672) {
+//             document.querySelector('.main-content-left').classList.remove('col-lg-7');
+//             document.querySelector('.main-content-left').classList.add('col-lg-12');
+//             document.querySelector('.main-content-right').classList.remove('col-lg-5');
+//             document.querySelector('.main-content-right').classList.add('col-lg-12');
+//         }
+//         else {
+//             document.querySelector('.main-content-right').classList.remove('col-lg-12');
+//             document.querySelector('.main-content-right').classList.add('col-lg-7');
+//             document.querySelector('.main-content-left').classList.remove('col-lg-12');
+//             document.querySelector('.main-content-left').classList.add('col-lg-12');
+//         }
+//     }
+//     else {
+//         document.querySelector('.main-sidebar-div').style.display = 'block';
+//         document.querySelector('.main-content-div').classList.remove('col-lg-12');
+//         document.querySelector('.main-content-div').classList.add('col-lg-11');
+//     }
+// })
+
+
+// let my = new Set(['123451','my']);
+// console.log(my.entries());
+// console.log(my);
+
+
+// let myarr = [1,2,3];
+// let some = '';
+// let processed = myarr.map(ele => {
+//     some = some + ' ' + String(ele);
+// });
+// let myset = new Set();
+// myset.add(some);
+// console.log(myset);
+
+// let myset = new Set('hbAinavAbhinav'); 
+// // console.log(myset.size);
+// let tocheck = "1 2";
+// tocheck = tocheck.split(' ').map(ele => parseInt(ele));
+// console.log(tocheck);
+
+// const myarr = [5,4,3,2,1,10];
+// myarr.sort((a,b) => a-b);
+// let a = 0.1;
+// let b = 0.3;
+// console.log(a,b);
+// let my = 'Abhinav';
+// let second = my.concat();
+// console.log(second);
+
+// let fruits = [2,3,1,4,5,6];
+
+// //console.log(fruits);
+
+// class my{
+//     c = 10;
+//     constructor(a,b) {
+//         this.a = a;
+//         this.b = b;
+//     }
+
+// }
 
 
 
+// const body = [];
+
+// body.push(10);
+// body.push(20);
+// console.log(body);
+
+// const one = 'one';
+// const sec = 'second';
+// const third = 'third';
+// const fourth = 'fourth';
+// setTimeout(()=>console.log('my set timeout 1'),2);
+// //window.setImmediate(()=>console.log('This is my set immediate !'));
+// window.setTimeout(()=>console.log('my set timeout 2'),0);
+// const five = 'five';
+// const six = 'six';
+// const seventh = 'seventh';
+// const eigth = 'eigth';
+// console.log(one);
+// console.log('Code executed');
+// console.log(sec);
+// console.log(third);
+// console.log(fourth);
+// window.setTimeout(()=>console.log('set timeout 0.5'),0.5);
+// console.log(five);
+// console.log(six);
+// // console.log(seventh);
+
+// const my = {
+//     get : () => {return 37},
+//     set : () => {return 50}
+// }
+// console.log(my.get());
+
+// function my (so){
+//     console.log(this.a,this.b);
+//     console.log(so);
+// }
 
 
+// const myobj = {
+//     a : 'Apple',
+//     b : 'ball',
+//     c : 'cat'
+// }
+
+// const soy = ['this is','something big'];
+// my.call(myobj,...soy);
+
+
+
+// document.querySelector('.tocheck').addEventListener('click',()=>{
+//     console.log('This is button click');
+// });
+
+// let i=1000000;
+
+// while(i--){
+//     // so this will keep the script running
+// }
+
+// console.log('Running finished');
+
+// let i=2;
+// try {
+//     if(i!==1){
+//         throw new error('Some error');
+//     }
+//     console.log('I am in try');
+//     undef();
+// }
+// catch(e){
+//     console.log(e);
+// } finally{
+//     console.log('This part always runs even after error occurs');
+// }
+
+// console.log('...I am back in main execution');
+
+
+
+// let my = new Promise((res,rej) => {
+//     res({my : 'This is my', some :'This is some'});
+//     rej({error : 'This is error'});
+// });
+
+// my.then((response)=>{
+//     console.log(response);
+// }).catch((error) => {
+//     console.log(error);
+// })
+
+
+// async function mysy(){
+// //     let data = await fetch('http://');
+// //     data.catch(error => {
+// //         console.log('Some error');
+// //     })
+// // }
+// mysy();
+
+// function my(){
+//     return new Promise((resolve,reject) => {
+//         resolve({data : 'data'});
+//         //reject({error : 'error'});
+//     })
+// }
+
+// // my().then((data) => {
+// //     console.log(data);
+// // }).catch((err)=>{
+// //     console.log(err);
+// // })
+
+// // async function so(){
+// //     try{
+// //         let data = await my();
+// //         console.log(data);
+// //     }
+// //     catch(e){
+// //         console.log(e);
+// //     }
+// // }
+
+// // so();
+// my().then(data => {
+//     console.log(data);
+// })
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+
+
+// setImmediate(() => console.log('my setImmediate'));
+
+// setTimeout(()=>{console.log('my SetTimeout')},0);
+
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// console.log('Script ends');
+
+// let myfirst = '30';
+// let second = 'Abhiz';
+
+// let some = 29;
+
+// // if(myfirst >= second){
+// //     console.log('Abhinav is more than Abhiz');
+// // }
+// // if(second >= myfirst){
+// //     console.log('Abhiz is more than abhinav');
+// // }
+
+// if(myfirst >= 29){
+//     console.log('Abhinav is more than 29');
+// }
+// if(29 >= myfirst){
+//     console.log('29 is more than Abhinav');
+// }
 
