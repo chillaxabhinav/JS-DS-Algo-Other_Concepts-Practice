@@ -19,3 +19,5 @@ myPromiseObj.then((response)=>{
 }).catch(()=>{
     console.log(error);
 })
+
+export {myPromiseObj as yo};

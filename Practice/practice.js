@@ -839,3 +839,179 @@
 //     console.log('29 is more than Abhinav');
 // }
 
+// const http = require('http');
+
+// function func(req,res){
+
+// }
+
+// const server = http.createServer(func);
+
+// server.listen();
+
+// let myarr = [1,1,2,3,4];
+
+// let second = [2,3];
+
+// let someother = {
+//     my : 'Abhinav',
+//     name : 'Singh'
+// }
+
+// if(myarr >= second){
+//     console.log('surprise');
+// }
+// if(second >  myarr){
+//     console.log('again');
+// }
+
+// if(myarr >= someother){
+//     console.log('arr greater than someother');
+// }
+// if(someother > myarr){
+//     console.log('Someother is greater than arr');
+
+// function me(first,second){
+//     console.log(arguments.length);
+// }
+// let my = {
+//     1: 1,
+//     2: 2,
+//     3 : 3
+// }
+
+// console.log(my[4]);
+
+
+
+
+// Object.compare = function (obj1, obj2) {
+//     //Loop through properties in object 1
+//     for (var p in obj1) {
+//         //Check property exists on both objects
+//         if (obj1.hasOwnProperty(p) !== obj2.hasOwnProperty(p)) return false;
+//         switch (typeof(obj1[p])) {
+//             //Deep compare objects
+//             case 'object':
+//                 if (!Object.compare(obj1[p], obj2[p])) return false;
+//                 break;
+//             //Compare function code
+//             case 'function':
+//                 if (typeof(obj2[p]) == 'undefined' || (p != 'compare' && obj1[p].toString() != obj2[p].toString())) return false;
+//                 break;
+//             //Compare values
+//             default:
+//                 if (obj1[p] !== obj2[p]) return false;
+//         }
+//     }
+
+//     //Check object 2 for any extra properties
+//     for (var p in obj2) {
+//         if (typeof(obj1[p]) === 'undefined') return false;
+//     }
+//     return true;
+// };
+
+
+// class myclass{
+//     constructor(){
+//         this.so=10;
+//     }
+// }
+// let my = new myclass();
+
+// console.log(typeof(my));
+
+// let myarr = [1,2,3,4];
+
+// function check(){
+//     console.log('Checking');
+// }
+
+// let another = () => {
+//     console.log('Checking');
+// }
+
+// if(typeof(myarr)==='object'){
+//     console.log('Working');
+// }
+
+// if(typeof(check) === 'function'){
+//     console.log('working');
+// }
+
+// if(typeof(another)==='function'){
+//     console.log('All Working');
+// }
+
+// let some1 = () =>{
+//     console.log('yup');
+// };
+
+// let some1to = some1.toString();
+
+
+// let my = [1,2,3,false,0];
+// let sec = [1,2,3,false,0];
+
+// let ans = Object.compare(some1,some1);
+// console.log(ans);
+
+// if(typeof(my)==='object'){
+//     console.log('Code runs fine');
+// }
+// let some = 1;
+// if(typeof(some)==='object'){
+//     console.log('Sucks');
+// }
+// if(typeof(some)!='object'){
+//     console.log('cool');
+// }
+
+
+// let yo =  new Response();
+
+// console.log(`this is response ${typeof(yo)}`);
+
+
+
+// document.title = 'message from webpage';
+
+// alert('This is title','This is a palindrome');
+
+// let left = {some : Infinity};
+// console.log(typeof(left.some));
+// if(isFinite(left.some)){
+//     console.log('I fail');
+// }
+// console.log(isFinite(left.some));
+
+// let some = {else : 'Abhinav'};
+// // if(isFinite(some)){
+// //     console.log('This works');
+// // }
+// if(true){
+//     console.log(some.hasOwnProperty('name'));
+// let some = [0,2,3,4];
+
+// let yup = some.findIndex(ele => ele===100);
+// console.log(yup);
+
+
+
+// delete test[1];
+
+// console.log(test);
+
+// for(let i in test){
+//     test[i] = test[i].filter(ele => ele !== 1);
+// }
+// console.log(test);
+
+
+const domes = require('domes.js');
+
+let my = new domes.Stack();
+my.push(2)
+console.log(my.toArray());
+
