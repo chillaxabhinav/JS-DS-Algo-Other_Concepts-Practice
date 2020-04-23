@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "domes.js": "^0.2.4"
+    "domes.js": "^0.2.5"
   }
 }

@@ -4,14 +4,36 @@
             practice
         </title>
         <style>
-            body{
-                background-color: black;
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            div.one,div.two,div.three{
+                height: 48px;
+                margin-left: 20px;
+                padding: 20px;
+                border: 2px solid black;
+                display: inline-block;
+            }
+            .one{
+                position: absolute;
+                top : 20px;
+                left : 100px;
             }
         </style>
     </head>
     <body>
-        <div class="my second">
-            <h1>My class</h1>
+        <div class="outer">
+            <div class="one">
+                <h2>One</h2>
+            </div>
+            <div class="two">
+                <h2>Second</h2>
+            </div>
+            <div class="three">
+                <h2>Three</h2>
+            </div>
         </div>
         <script src='practice.js'></script>
     </body>

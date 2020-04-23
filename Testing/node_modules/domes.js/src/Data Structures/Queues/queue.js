@@ -118,7 +118,7 @@ class Queue {
                 return null;
             }
             else {
-                return this.tail.value;
+                return this.head.value;
             }
         }
         catch (e) {

@@ -1009,9 +1009,32 @@
 // console.log(test);
 
 
-const domes = require('domes.js');
+// const domes = require('domes.js');
 
-let my = new domes.Stack();
-my.push(2)
-console.log(my.toArray());
+// let my = new domes.Stack();
+// my.push(2)
+// console.log(my.toArray());
 
+const products = [];
+
+class Product{
+    constructor(title) {
+        this.title = title;
+    }
+
+    save(){
+        products.push(this);
+    }
+
+    static fetchAll(myobj){
+        return myobj.title;
+    }
+}
+
+let one = new Product({title : 'One'});
+one.save();
+let two = new Product({title : 'two'});
+two.save();
+
+console.log(products);
+console.log(Product.fetchAll(one));
