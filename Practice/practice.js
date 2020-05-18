@@ -1015,26 +1015,47 @@
 // my.push(2)
 // console.log(my.toArray());
 
-const products = [];
+// const products = [];
 
-class Product{
-    constructor(title) {
-        this.title = title;
-    }
+// class Product{
+//     constructor(title) {
+//         this.title = title;
+//     }
 
-    save(){
-        products.push(this);
-    }
+//     save(){
+//         products.push(this);
+//     }
 
-    static fetchAll(myobj){
-        return myobj.title;
-    }
+//     static fetchAll(myobj){
+//         return myobj.title;
+//     }
+// }
+
+// let one = new Product({title : 'One'});
+// one.save();
+// let two = new Product({title : 'two'});
+// two.save();
+
+// console.log(products);
+// console.log(Product.fetchAll(one));
+
+
+// function yup(fir, sec){
+//     this.first = fir,
+//     this.second = sec
+// }
+
+// const yo = new yup(1, 2);
+// console.log(yo);
+
+
+const another = () => {
+
+    console.log('This is my function');
+}
+ 
+const yo = () =>{
+    console.log('This is my function');
 }
 
-let one = new Product({title : 'One'});
-one.save();
-let two = new Product({title : 'two'});
-two.save();
-
-console.log(products);
-console.log(Product.fetchAll(one));
+console.log(_.isEqual(yo, another));
