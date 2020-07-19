@@ -4,38 +4,33 @@
             practice
         </title>
         <style>
-            *{
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
+            .outer {
+                color : white;
+                background-color: black;
+                text-align: center;
+                vertical-align: middle;
+                width : 100%;
+                height : 10vh;
             }
-            div.one,div.two,div.three{
-                height: 48px;
-                margin-left: 20px;
-                padding: 20px;
-                border: 2px solid black;
-                display: inline-block;
+            .unique {
+                display: block;
+                background-color : brown;
+                text-align: justify;
+                margin : auto;
             }
-            .one{
-                position: absolute;
-                top : 20px;
-                left : 100px;
+            span {
+            
             }
         </style>
     </head>
     <body>
         <div class="outer">
-            <div class="one">
-                <h2>One</h2>
-            </div>
-            <div class="two">
-                <h2>Second</h2>
-            </div>
-            <div class="three">
-                <h2>Three</h2>
+            This is my block element
+            <div class="unique">
+                This is my nested block
             </div>
         </div>
-        <script src="lodash.js"></script>
+        <span>This is my Inline element         </span>
         <script src='practice.js'></script>
     </body>
 </html>

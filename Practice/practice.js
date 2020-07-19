@@ -1049,13 +1049,35 @@
 // console.log(yo);
 
 
-const another = () => {
+// const another = () => {
 
-    console.log('This is my function');
-}
+//     console.log('This is my function');
+// }
  
-const yo = () =>{
-    console.log('This is my function');
+// const yo = () =>{
+//     console.log('This is my function');
+// }
+
+// console.log(_.isEqual(yo, another));
+
+
+// const my ={
+//     name :  'Abhinav',
+//     lastname : () => {
+//         console.log(this);
+//     }
+// }
+
+// my.last();
+
+
+const myarr = ["amd","and","dark","night","stormy"];
+
+const compare = (a,b) => {
+    return b.length - a.length;
 }
 
-console.log(_.isEqual(yo, another));
+// if this is returning +ve integer then b will come before a
+// if this is returning -ve integer b will come after a
+
+console.log(myarr.sort(compare));
