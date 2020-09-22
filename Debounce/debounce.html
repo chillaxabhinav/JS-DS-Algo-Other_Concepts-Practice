@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="myInp"/>
+</body>
+<script>
+    const debounce = (func, limit) => {
+        let myTimeOut;
+        return () => {
+            clearTimeout(myTimeOut);
+            myTimeOut = setTimeout(() => {
+                func();
+            },limit);
+        }
+    }
+
+    const betterDebounced = debounce(() => console.log('Triggered'),700);
+
+    document.querySelector(".myInp").addEventListener('keypress', () => {
+        betterDebounced();
+    })
+
+</script>
+
+
+</html>

@@ -1071,13 +1071,227 @@
 // my.last();
 
 
-const myarr = ["amd","and","dark","night","stormy"];
+// const myarr = ["amd","and","dark","night","stormy"];
 
-const compare = (a,b) => {
-    return b.length - a.length;
+// const compare = (a,b) => {
+//     return b.length - a.length;
+// }
+
+// // if this is returning +ve integer then b will come before a
+// // if this is returning -ve integer b will come after a
+
+// console.log(myarr.sort(compare));
+
+
+
+
+// document.querySelector('some').addEventListener('dragleave',() => {});
+
+
+
+// document.querySelector('.outer').addEventListener('click',async (e) => {
+//     setTimeout(() => {
+//         console.log('I am clicked');
+//     },1000);
+
+//     document.querySelector('.outer').removeEventListener('click',() => {
+//         console.log('Listener removed');
+//     })
+    
+// });
+
+
+// const mySentence = "Thank you so much for contacting us. Dreamland guest relations. You're speaking with Ronaldo. May I have your name, please? Yes, sure. My name is robin soleimani. What is your phone number? It is 9876535362 as mentioned in the book Diary. Thank you so much for providing the info!";
+
+// let myArray = mySentence.split('.').map(ele => {
+//     return ele.trim();
+// });
+
+// myArray = myArray.map(ele => {
+//     return ele = ele + '.';
+// });
+
+// myArray = myArray.map(ele => {
+//     return ele.trim().split('?');
+// });
+
+// let myans = [];
+
+// myArray.forEach(ele => {
+//     if(ele.length > 1){
+//         ele[0] = ele[0] + '?';
+//         myans.push(ele[0]);
+//         myans.push(ele[1]);
+//     }
+//     else{
+//         myans.push(ele[0]);
+//     }
+// });
+
+// myans[7] = myans[7].split(" ").map(ele => {
+//     let some = parseInt(ele);
+//     if(!isNaN(some)){
+//         return 'XXXXXXXXXX';
+//     }
+//     else{
+//         return ele;
+//     }
+// });
+
+// myans[7] = myans[7].join(' ');
+
+// myans = myans.map(ele => {
+//     return ele.trim();
+// })
+
+// console.log(myans);
+
+
+// const my = async () => {
+//     let response, data;
+//     try{
+//         response = await fetch('https://think.cs.vt.edu/corgis/datasets/json/airlines/airlines.json');
+//         data = await response.json();
+//         console.log(data);
+//     }
+//     catch(e){
+//         console.log('error');
+//     }
+
+    // const mynew = data.prizes.filter(prize => {
+    //     if(prize.category === 'chemistry' && (prize.year >= 2000 && prize.year <=2019)){
+    //         return prize
+    //     }
+    // });
+
+    // mynew.map(prize => {
+    //     prize.laureates.map(ele => {
+    //         console.log(ele.firstname + " " + ele.surname);
+    //     })
+    // })
+// }
+
+// my();
+
+// async function my(){
+//     let response;
+//     response = await fetch('http://api.nobelprize.org/v1/prize.json');
+//     const data = await response.json();
+//     const prizes = await data.prizes;
+
+//     return prizes;
+// }
+
+
+// my().then(prizes => {
+//     const mynew = prizes.filter(prize => {
+//         if(prize.category === 'chemistry' && (prize.year >= 2000 && prize.year <=2019)){
+//             return prize
+//         }
+//     });
+
+//     console.log(mynew);
+
+
+//     // mynew.map(prize => {
+//     //     prize.laureates.map(ele => {
+//     //         console.log(ele.firstname + " " + ele.surname);
+//     //     })
+//     // })
+// })
+
+// document.querySelector('.mybutton').addEventListener('click',() => {
+//     console.log(this);
+//     console.log("this");
+// })
+
+
+// const obj = {
+//     firstname : 'Abhinav',
+//     lastname : 'Singh',
+//     getName : function() {
+//         return this.firstname+this.lastname;
+//     }
+// }
+
+// Array.__proto__ = obj;
+
+// // console.log(Array.__proto__.firstname);
+
+// const myarr =[1,2,4,5];
+
+// const arr = new Array(3);
+
+// console.log(arr.isPrototypeOf);
+
+// class Check {
+
+//     _name;
+
+//     constructor(name){
+//         this._name= name;
+//     }
+
+//     get name(){
+//         return this._name;
+//     }
+// }
+
+
+
+// class MyExtend extends Check{
+//     constructor(name){
+//         super();
+//         this.extendName = name;
+//     }
+// }
+
+// const myCheckInstance = new Check("Abhinav");
+
+
+// const newExtendInstance = new MyExtend("Abhinav-extend");
+
+
+// console.log(newExtendInstance.name);
+
+// const myObj = {
+//     yo : function() {
+//         console.log(this);
+//     }
+// }
+
+
+// function Check(name){
+//     this.name = name;
+//     this.getName = function() {
+//         console.log(this);
+//     }
+// }
+
+// Check.prototype.toExtend = () => {
+//     console.log('I am extended bro and can be accessible to this instance also');
+// }
+
+// const myCheckInstance = new Check('Abhinav');
+
+// class Yo extends Check {
+//     constructor(){
+//         super();
+//     }
+// }
+
+// const yoInstance = new Yo();
+
+class Check {
+    my = {
+        yup : () => {
+            console.log(this);
+            console.log("I am inside yup inside my inside chelc")
+        },
+        name : 'Abhinav'
+    }
 }
 
-// if this is returning +ve integer then b will come before a
-// if this is returning -ve integer b will come after a
+const newInstance = new Check();
 
-console.log(myarr.sort(compare));
+console.log(newInstance.my.yup());
