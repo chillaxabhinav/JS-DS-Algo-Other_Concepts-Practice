@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+h1{
+    color : white;
+}
+
+#first{
+    background-color: aquamarine;
+    height : 400px;
+    width: 400px;
+}
+
+#second{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}

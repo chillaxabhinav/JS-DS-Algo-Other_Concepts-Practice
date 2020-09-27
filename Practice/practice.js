@@ -1282,16 +1282,118 @@
 
 // const yoInstance = new Yo();
 
-class Check {
-    my = {
-        yup : () => {
-            console.log(this);
-            console.log("I am inside yup inside my inside chelc")
-        },
-        name : 'Abhinav'
+// class Check {
+//     my = {
+//         yup : () => {
+//             console.log(this);
+//             console.log("I am inside yup inside my inside chelc")
+//         },
+//         name : 'Abhinav'
+//     }
+// }
+
+// const newInstance = new Check();
+
+// console.log(newInstance.my.yup());
+
+
+
+// console.log(myCat.__proto__.);
+
+// Array.prototype.__proto__ = Dog;
+
+
+// console.log([2,3]);
+
+
+// class MyDog {
+//     constructor(name){
+//         this.name=name;
+//     }
+// }
+
+// MyDog.prototype = Array.prototype;
+
+// const myDoogieCool = new MyDog("");
+// console.log(myDoogieCool);
+
+
+// class MyCat extends MyDog{
+//     constructor(breedCat, name){
+//         super(name);
+//         this.breedCat = breedCat;
+//     }
+// }
+
+
+// const myCat = new MyCat("Zaid","Yo");
+// console.log(myCat);
+
+
+const me  ={
+    first : 'Abhinav'
+}
+
+
+const yo = {
+    my : 'my'
+}
+
+Object.setPrototypeOf(me, yo);
+
+// console.log(me);
+
+function Cat(catBreed){
+    this.catBreed = catBreed;
+
+    this.getBreed = function(){
+        return this.breed;
     }
 }
 
-const newInstance = new Check();
+const myCat = new Cat("CatBreed");
 
-console.log(newInstance.my.yup());
+function Dog(dogBreed){
+    this.dogBreed = dogBreed;
+
+    this.getDogBreed = function(){
+        return this.dogBreed;
+    }
+}
+
+Dog.prototype.second = "second";
+
+const myDog = new Dog("DogBreed");
+
+Cat.prototype.__proto__ = Dog.prototype;
+
+console.log(myCat);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
